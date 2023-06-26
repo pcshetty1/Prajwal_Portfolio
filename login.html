@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="style1.css">
+</head>
+ <body>
+ <center>
+	<form action='main.html' method='post' class="login">
+	<br><br><h1>Login</h1><br><br>
+	<div class="container">
+	<label for="uname"><b>Username</b></label>
+		<input type="text" placeholder="Username" name="username" required>
+	<br>
+	<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psW" required>
+	<br>
+	<button type="submit">LOGIN</button>
+	</div>
+	</form>
+<?php
+ if(isset($_POST['login'])){
+	header("location:login.php");
+ }
+ ?>
+ </center>
+ </body>
+</html>

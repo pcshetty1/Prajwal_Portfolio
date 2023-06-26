@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title> Hotel Management </title>
+	<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+	<img src="20210515_111055_0000.png" width="100%" height="40%">
+	<section class="header">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="main.html">HOME</a></li>
+				<li><a href="menu.html">MENU</a></li>
+				<li><a href="menu.html">ROOMS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		</nav>
+	</section>
+	<br><br>
+	<center><h1> ROOMS CATEGORIES </h1></center>
+      <table>
+	  <th><img src="room1.jpg" style="width:50%">
+        <h3>Single Room</h3>
+        <h6 class="">From 9,000</h6>
+        <p><h3>Single bed</h3></p>
+        <p>15m<sup>2</sup></p>
+        <button>Choose Room</button>
+      </th>
+       <th><img src="room2.jpg" style="width:50%">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From 12,000</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </th>
+	  <th>
+       <img src="room3.jpg" style="width:50%">
+       <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From $199</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <button>Choose Room</button>
+      </th>
+	  </table>
+	  <br><br><br>
+	  <form action="room.php" method="post">
+	<center><b><h3> Room Booking </h3></b></center>
+	<div align="center" class="div">
+	 <b><label for="Name">Name</label></b>
+   <input type="text" name="name" id="name" placeholder="FullName">
+   <br><br>
+   <b><label for="email">Email</label></b>
+   <input type="text" name="email" id="email" placeholder="Email">
+   <br><br>
+	<label for="rooms"><b>Choose a Rooms: </b></label>
+		<select name="rooms" id="rooms">
+		  <option value="Choose">Choose</option>
+		  <option value="Single Room">Single Room</option>
+		  <option value="Double Room">Double Room</option>
+		  <option value="Deluxe Room">Deluxe Room</option>
+		</select>
+		<br><br><br>
+	  <label><b> Check In </b></label>
+      <input class="" name="checkin" id="checkin" type="text" placeholder="DD/MM/YYYY">
+	 <label><b> Check Out </b></label>
+      <input class="" name="checkout" id="checkout"  type="text" placeholder="DD/MM/YYYY">
+	  <br><br>
+    <button type="submit"  class="btn btn-sucess" href="">Submit</button>
+	</div>
+</body>
+
+<div class="footer">
+  <table class="footer1"> <p class="p"><h4><br><br>If you have any questions, do not hesitate to ask them </h4></p>
+  	<th>Address:.<br> Hinjawadi Phase 1, Pune, Maharashtra<br></th>
+    <th> Phone:.<br> +01 151515<br></th>
+    <th> Email:.<br> shettyhotels01@mail.com<br></th>
+  </table>
+</div>
+</html>
